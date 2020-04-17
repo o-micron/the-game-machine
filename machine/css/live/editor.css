@@ -1,0 +1,30 @@
+html, body {
+  background-color: #10004b;
+}
+
+#playground_screen > .row {
+  padding-top: 4vh;
+  padding-left: 2vh;
+  padding-right: 0vh;
+  height: 96vh;
+  min-height: 96vh;
+  max-height: 96vh;
+}
+
+.flex-fill {
+  flex: 1 1 auto;
+}
+
+.flex-fill-h {
+  flex: 1 1 auto;
+}
+
+.flex-fill-v {
+  flex: 1 1 auto;
+}
+
+canvas {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}

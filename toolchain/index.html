@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="utf-8">
+      <title>WebAssembly.sh</title>
+      <meta name="Description"
+            content="WebAssembly.sh: an online WebAssembly terminal to run WASI modules directly on your browser">
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@wasmerio">
+      <meta property="og:url" content="https://webassembly.sh">
+      <meta property="og:title" content="WebAssembly.sh">
+      <meta property="og:description"
+            content="An online WebAssembly terminal to run WASI modules directly on your browser">
+      <meta property="og:image" content="https://webassembly.sh/assets/icon.png">
+      <meta property="og:type" content="website">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <link rel="stylesheet" href="assets/wasm-terminal/xterm.css">
+      <style>
+            *,
+            :after,
+            :before {
+                  box-sizing: border-box
+            }
+
+            body,
+            html {
+                  font: 14px/1.21 Times New Roman, Times, serif;
+                  font-weight: 400;
+                  margin: 0;
+                  height: 100%;
+                  width: 100%;
+                  background-color: #000
+            }
+
+            html {
+                  overflow: hidden;
+                  width: 100%
+            }
+
+            body {
+                  position: fixed;
+                  overflow-y: auto
+            }
+
+            html {
+                  line-height: 1.15;
+                  -webkit-text-size-adjust: 100%
+            }
+
+            body {
+                  margin: 0
+            }
+      </style>
+      <link rel="manifest" href="/manifest.json">
+      <meta name="theme-color" content="#000">
+      <link href="/toolchain/bundle.4ecf4.css" rel="preload" as="style">
+</head>
+
+<body><noscript>Please enable JavaScript to use the Wasm Shell.</noscript>
+      <script crossorigin="anonymous">
+            function bindWasmFn(mod) {
+                  window.that = mod;
+            }
+      </script>
+      <!-- <script type="__PREACT_CLI_DATA__">{"preRenderData":{"url":"/"}}</script> -->
+      <!-- <script
+            nomodule="">!function () { var e = document, t = e.createElement("script"); if (!("noModule" in t) && "onbeforeload" in t) { var n = !1; e.addEventListener("beforeload", function (e) { if (e.target === t) n = !0; else if (!e.target.hasAttribute("nomodule") || !n) return; e.preventDefault() }, !0), t.type = "module", t.src = ".", e.head.appendChild(t), t.remove() } }();</script> -->
+      <script crossorigin="anonymous" src="/toolchain/bundle.847e7.esm.js" type="module"></script>
+      <script nomodule="" src="/toolchain/polyfills.ea3a1.js"></script>
+      <script nomodule="" defer="defer" src="/toolchain/bundle.7087a.js"></script>
+      <link rel="stylesheet" href="/toolchain/bundle.4ecf4.css">
+</body>
+
+</html>
