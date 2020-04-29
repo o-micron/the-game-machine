@@ -2,6 +2,9 @@
 this is an attempt to create a game machine using web assembly.
 This is possible using [wasmer](https://wasmer.io/) and [wapm](https://wapm.io/)
 
+# Live website
+https://game-machine.herokuapp.com/index.html
+
 # a quick video
 https://twitter.com/omarsheriffathy/status/1255252545653661698?s=20
 
